@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Secret_Memo">
         <activity
+            android:name=".MemoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

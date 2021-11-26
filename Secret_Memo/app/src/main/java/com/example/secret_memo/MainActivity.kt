@@ -1,5 +1,6 @@
 package com.example.secret_memo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -21,6 +22,9 @@ class MainActivity : AppCompatActivity() {
             val password = "1234"
             if (passwordText == password) {
                 Log.d("Password", "통과")
+                val nextIntent = Intent(this, MemoActivity::class.java)
+                startActivity(nextIntent)
+                this.finish()
             } else {
                 Log.d("Password", "틀렸어요.")
             }
